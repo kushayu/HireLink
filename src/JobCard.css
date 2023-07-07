@@ -1,0 +1,119 @@
+.job-card {
+  display: flex;
+  padding: 30px;
+  background-color: white;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.job-card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.img-c {
+  height: 88px;
+  width: 88px;
+  margin-right: 15px;
+}
+
+.img-c img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.left p {
+  font-size: 18px;
+  color: #58a9a7;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h6 {
+  color: #323838;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.card-info ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-info ul li {
+  font-size: 15px;
+  color: #939c9b;
+  padding: 0 10px;
+  position: relative;
+}
+.card-info ul li:before {
+  content: "";
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  top: 50%;
+  background-color: #939c9b;
+  border-radius: 50%;
+  left: -2px;
+  transform: translateY(-50%);
+}
+
+.right ul{
+  display: flex;
+  list-style: none;
+}
+
+.right ul li{
+  margin-right: 10px;
+      margin-bottom: 0;
+      padding: 7px;
+      border-radius: 4px;
+      color: #58a9a7;
+      font-weight: 500;
+      background-color: #f1f7f5;
+      margin: 5px 10px 5px 0;
+      cursor: pointer;
+      transition: all ease 0.2s;
+}
+
+.right ul li:hover {
+  background-color: #58a9a7;
+  color: white;
+}
+/* .tag-new {
+  padding: 7px 10px;
+  background-color: #58a9a7;
+  color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+  display: none; 
+} */

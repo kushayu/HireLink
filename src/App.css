@@ -1,38 +1,317 @@
-.App {
-  text-align: center;
+:root {
+  --red-color: #990033;
+  --red-bg-color: rgb(153 0 51 / 14%);
+  --font-color: #b7b7b7;
+  --bg-color: #171717;
+  --bg-dark-color: #0c0b0b;
+  --white-color: #fdfffc;
+  --green-color: #0abf53;
+  --green-bg-color: rgb(10 191 83 / 17%);
+  --blue-color: #6168ff;
+  --blue-bg-color: rgb(97 104 255 / 9%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #172539;
+  height: min-content;
+  padding: 100px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  width: 100%;
+  height: min-content; /* 418px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 40;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.p-heading {
+  width: 100%;
+  height: auto; /* 58px */
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Abril Fatface", sans-serif;
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.paragraph {
+  flex-shrink: 0;
+  max-width: 600px;
+  height: auto; /* 90px */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow: visible;
+  position: relative;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Nunito", "Nunito Placeholder", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.service {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  height: 400px;
+  justify-content: space-evenly;
+}
+
+.service_card {
+  height: 200px;
+  width: 200px;
+  padding: 32px;
+  background-color: #0d131e;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+  box-shadow: -1px 15px 30px -12px black;
+  color: #c0d6df;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-out;
+}
+
+.service_card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.offer-container {
+  height: min-content;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #172539;
+}
+
+.offer_title {
+  text-align: center;
+  width: 50rem;
+  margin: auto;
+
+  & h3 {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 3.214rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 0%;
+
+  }
+
+  & p {
+    width: 100%;
+    font-size: 1.214rem;
+    line-height: 2rem;
+    color: var(--font-color);
+  }
+}
+
+.offer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background-color: #172539;
+  color: #ffffff;
+}
+
+.footer-div ul {
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-div ul li:hover {
+  text-decoration: underline;
+  color: #03bfcb;
+}
+
+.about {
+  max-width: 500px;
+}
+.newsletter {
+  max-width: 400px;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0px;
+}
+
+.job {
+  background-color: #f0fafb;
+  height: min-content;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.job_title {
+  text-align: center;
+  width: 50rem;
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 70px;
+
+  & h3 {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 3.214rem;
+    font-weight: 700;
+    color: #231e39;
+    margin-bottom: 0%;
+    text-align: center;
+  }
+  & p {
+    width: 100%;
+    font-size: 1.214rem;
+    line-height: 2rem;
+    color: #231e39;
+  }
+
+}
+
+.profile {
+  background-color: #172539;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.title {
+  text-align: center;
+  width: 50rem;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.title h1 {
+  width: 100%;
+    font-size: 2.5rem;
+    line-height: 3.214rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 0%;
+    text-align: center;
+}
+.candidate-profiles {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0%;
+  gap: 30px;
+}
+
+.contact_us {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0fafb;
+  gap: 60px;
+}
+
+.contact_us h1 {
+  color: #03bfcb;
+  font-size: 2rem;
+}
+.contact-form {
+  text-align: center;
+}
+.form-group {
+  width: 600px;
+  display: flex;
+
+  .form-control {
+    width: 100%;
+    border: 0.0714rem solid #172539;
+    font-size: 1.0714rem;
+    font-weight: 400;
+    padding: 0.7143rem 1.4286rem;
+    border-radius: 0.5714rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.contact-form .btn {
+  background-color: #03bfcb;
+  border: 1px solid #231e39;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-out;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.newsletter .btn2 {
+  margin-left: 10px;
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.newsletter .btn2:hover {
+  background: transparent;
+  color: #03bfcb;
+}
+
+.newsletter input {
+  background-color: transparent;
   color: white;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-div {
+  margin: 0%;
+  padding: 0%;
+  background-color: #0d131e;
+  height: 35px;
+  color: #b3b8cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

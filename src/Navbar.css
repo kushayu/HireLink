@@ -1,0 +1,34 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 32px;
+    background-color: #DBE9EE;
+    height: 64px;
+
+    
+}
+.logo{
+    color: #166088;
+    font-weight: 700;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    color: #166088;
+    font-weight: bold;
+    transform-style: preserve-3d;
+  transition: transform 0.2s ease-out;
+}
+
+
+.list li:hover{
+    background-color: #172539;
+    color: white;
+    border-radius: 10px;
+    padding:  5px 12px;
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+
